@@ -116,6 +116,20 @@
         height:15vh; 
     }
 
+    #competences h2 {
+        font-size: 1em;
+    }
+
+    #competences .titre {
+        font-size: .9em;
+    }
+
+    #competences .sous-titre {
+        font-size: .8em;
+    }
+
+
+
     h2 span {
         margin-left: 15%;
         color:#fff; 
@@ -123,10 +137,21 @@
 
     }
 
-    /* #portfolio {
-        height:35vh; 
+   
 
-    }  */
+    /***********Section portfolio************/
+
+    #portfolio  {
+        min-height:100vh;
+        padding: 350px 100px 100px;
+    }
+
+    #portfolio h2 {
+        font-size: 1em;
+ 
+    }
+   
+
 }
 
 @media (max-width:772px) {

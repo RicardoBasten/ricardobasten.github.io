@@ -119,11 +119,16 @@ h3{
     padding: 350px 100px 100px;
    
 }    
-/* 
+
 #portfolio {
     min-height:100vh;
+    padding: 150px 100px 100px;
 
-} */
+} 
+
+
+
+
 
 /* section {
     height: 60vh;
@@ -358,7 +363,6 @@ h2 {
 }
 
 .container .competences span {
-    
     justify-content: space-between;
 }
 
