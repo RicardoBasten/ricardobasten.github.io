@@ -1,2 +1,2 @@
 # ricardobasten.github.io
-Mon site web profesionnel.
+Mon site web professionnel.
