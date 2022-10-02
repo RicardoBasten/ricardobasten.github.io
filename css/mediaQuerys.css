@@ -1,11 +1,11 @@
-@media (max-width:470px) {
+@media (max-width:576px) {
     section {
         padding: 100px 50px 50px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         display: flex;
-        min-height:55vh; 
+        min-height:50vh; 
     }
 
     header ul {
@@ -113,7 +113,8 @@
     }
 
     #competences  {
-        height:15vh; 
+        /* height:15vh;  */
+        min-height: 100hv;
     }
 
     #competences h2 {
@@ -143,7 +144,7 @@
 
     #portfolio  {
         min-height:100vh;
-        padding: 350px 100px 100px;
+        /* padding: 300px 100px 100px; */
     }
 
     #portfolio h2 {
@@ -154,7 +155,7 @@
 
 }
 
-@media (max-width:772px) {
+@media (max-width:768px) {
 
     
 
@@ -169,9 +170,18 @@
     }
 
      
-    /* #competences {
-    height:20vh; 
-    }   */
+    #competences h2 {
+        font-size: 1.0em;  
+    }  
+
+    .container .grid-container .competences .titre {
+        font-size: 1.0em; 
+    }
+
+    .container .grid-container .competences .sous-titre {
+        font-size: 1.0em; 
+    }
+
 
 }
 
@@ -179,9 +189,11 @@
 
 @media (max-width:1200px) {
 
-    
+    #accueil{
+        min-height: 100vh;  
+    }
 
-    /* .container-profil-metier .nom{
+     /* .container-profil-metier .nom{
         height: 300vh;  
     } 
 
@@ -193,13 +205,13 @@
      /* #accueil {
       height:50vh; 
      
-    }   
+    }    */
 
     #competences {
-        height:50vh; 
+       min-height:100vh; 
     }    
-
+/* 
      #portfolio {
-        height:30vh;  
-    } */
+        min-height:100vh; 
+    }  */
 }
