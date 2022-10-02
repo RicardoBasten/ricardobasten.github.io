@@ -57,7 +57,7 @@ header .logo {
 header ul {
     position: relative;
     display: flex;
-} 
+}
 
 header ul li{
 
@@ -102,41 +102,17 @@ section {
     padding: 150px 100px 100px;
 }
 
-/* 
-.container{
-    min-height: 100vh;
-} */
-
-/* #accueil {
-    height: 25vh;
-
-} */
-
-
-
 h3{
     min-height:100vh;
     padding: 350px 100px 100px;
-   
-}    
+
+}
 
 #portfolio {
     min-height:100vh;
     /* padding: 150px 100px 100px; */
 
-} 
-
-
-
-
-
-/* section {
-    height: 60vh;
-} */
-
-/* h4 {
-   padding-bottom: 50%;
-} */
+}
 
 section h2 {
     font-size: 1.5em;
@@ -147,27 +123,28 @@ section a {
     padding: 8px 10px;
     text-decoration: none;
     font-size: 1.1em;
-    background: #111; /*cambiar color*/
+    background: #111; 
     color:#fff;
-    margin-top: 20px;/*cambiar color*/
-}
+    margin-top: 20px;
+} 
 
-section:nth-child(odd) {
+/* section:nth-child(odd) {
     position: relative;
     justify-content: left;
     align-items: center;
     color: var(--sous-tritre-competences);
-}
+    /* min-height: 100vh; 
+} */
 
 /***********Section profil************/
 
- .nom { 
+ .nom {
     width: 100%;
     font-size: 1.5em;
     color:var(--text-color);
     text-align: left;
     /* align-items:flex-start; */
-}  
+}
 
 .nom span {
     color: #F18009 ;
@@ -183,7 +160,7 @@ section:nth-child(odd) {
     color:#fff;
     text-align: right;
     margin: 0 auto;
-    
+
 }
 
 .metier span {
@@ -211,6 +188,7 @@ section:nth-child(odd) {
     height:25%;
     object-fit: contain;
     color: #f7c331;
+    
 }
 
 
@@ -229,14 +207,14 @@ h2 {
     gap:1.2em;
     padding: 0 auto;
     margin-left: 15%;
-  
-   
+
+
 }
 
 .container .grid-container .competences span {
     display: block;
     font-size: .9em;
-   
+
 }
 
 
@@ -244,16 +222,16 @@ h2 {
     font-size: 1.3em;
     color:var( --text-color);
     font-weight: 700;
-   
+
 }
 
 
 .container .grid-container .competences .sous-titre {
     font-size: 1.1em;
     color:var( --sous-titre);
-    margin-left: 3%; 
+    margin-left: 3%;
     justify-content: center;
- 
+
 }
 
 
@@ -278,8 +256,8 @@ h2 {
 
 h2 {
     color:var(--title-competenteces);
-   
-    
+
+
 }
 
 .competences-prog span {
@@ -288,7 +266,7 @@ h2 {
 
 .container-competences h4{
     color:var(--text-color);
-    
+
 }
 
 .html, .css, .js, .fb, .css-grid, .total-fb, .pho, .illu{
@@ -309,7 +287,7 @@ h2 {
 }
 
 .comp-fb {
-    width: 70px; 
+    width: 70px;
 }
 .comp-css-grid {
     width: 60px;
@@ -352,14 +330,14 @@ h2 {
     /* gap:10px;  */
     display: flex;
     width: 100%;
-  
-    
-} 
+
+
+}
 
 .container .competences {
     color: #fff;
-    
-   
+
+
 }
 
 .container .competences span {
@@ -371,7 +349,7 @@ h2 {
 
 /*#cv {
    display: none;
-  
+
 }
 
 /***********section portolio*************/
@@ -389,7 +367,7 @@ h2 {
 /* .container-port .grid-container-port .portfolio span {
     display: block;
     font-size: .9em;
-   
+
 } */
 
 
@@ -403,7 +381,7 @@ h2 {
 .container .grid-cont-port .projets .sous-titre {
     font-size: 1.1em;
     color:var( --sous-titre);
-    margin-left: 3%; 
+    margin-left: 3%;
     justify-content: center;
 }
 
@@ -424,13 +402,13 @@ h2 {
 
 
 
-/* 
+/*
 .web-forum {
     width: 200px;
     height: 200px;
 } */
 
-    
+
 
 
 
