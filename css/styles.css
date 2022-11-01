@@ -6,6 +6,7 @@
    --text-color-inverse:rgb(255, 255, 255);
    --text-color:#f7c331;
    --sous-titre:#F18009;
+   --sous-titre-over:#f7c331;
    --navbar-shallow-color:rgb(39, 55, 70);
    --color-toggle: rgb(255, 255, 255);
    --color-toggle-hover:#F18009;
@@ -84,7 +85,6 @@ header ul li a {
 }
 
 .header ul li a:hover {
-    /*display: block;*/
     background-color: var(--color-menu);
 }
 
@@ -132,14 +132,6 @@ section a {
     background-color: #F18009;
     min-height: 100vh;
 }
-
-/* section:nth-child(odd) {
-    position: relative;
-    justify-content: left;
-    align-items: center;
-    color: var(--sous-tritre-competences);
-    /* min-height: 100vh; 
-} */
 
 /***********Section profil************/
 
@@ -201,17 +193,13 @@ section a {
 
 /***********Section compétences********/
 
-h2 {
-    margin-left: 15%;
-}
-
 .container .grid-container {
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap:1.2em;
     padding: 0 auto;
-    margin-left: 15%;
+    /* margin-left: 15%; */
 
 
 }
@@ -219,7 +207,6 @@ h2 {
 .container .grid-container .competences span {
     display: block;
     font-size: .9em;
-
 }
 
 
@@ -227,9 +214,7 @@ h2 {
     font-size: 1.3em;
     color:var( --text-color);
     font-weight: 700;
-
 }
-
 
 .container .grid-container .competences .sous-titre {
     font-size: 1.1em;
@@ -242,65 +227,16 @@ h2 {
 
 h2 {
     color:var(--title-competenteces);
-
-
 }
 
 .competences-prog span {
     margin-left: 0;
 }
 
-.container-competences h4{
-    color:var(--text-color);
-
-}
-
-.html, .css, .js, .fb, .css-grid, .total-fb, .pho, .illu{
-    color:var(--text-color);
-    margin-top: 10px;
-    font-size: 1.1em;
-}
-
-.comp-html{
-    width: 70px;
-}
-.comp-css{
-    width: 50px;
-}
-
-.comp-js {
-    width: 40px;
-}
-
-.comp-fb {
-    width: 70px;
-}
-.comp-css-grid {
-    width: 60px;
-}
 
 .comp-pho {
     width: 80px;
 }
-
-.comp-illu {
-    width: 40px;
-}
-
-.total-html, .total-css, .total-js, .total-fb, .total-css-grid,.total-pho, .total-illu{
-    width: 100px;
-    border: 1px solid #ffffff;
-}
-
-
-.comp-html, .comp-css, .comp-fb, .comp-css-grid, .comp-js, .comp-pho, .comp-illu  {
-    display: block;
-    position: relative;
-    background: #F87652;
-    text-align: center;
-    height: 1em;
-    line-height: 1.1em;
-    }
 
 .container .design span {
     display: inline;
@@ -320,10 +256,9 @@ h2 {
 
 }
 
-.container .competences {
+.container h2 {
     color: #fff;
-
-
+    
 }
 
 .container .competences span {
@@ -347,15 +282,8 @@ h2 {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap:1.2em;
     padding: 0 auto;
-    margin-left: 15%;
+    /* margin-left: 15%; */
 }
-
-/* .container-port .grid-container-port .portfolio span {
-    display: block;
-    font-size: .9em;
-
-} */
-
 
 .container .grid-cont-port .portfolio .projets .titre {
     font-size: 1.3em;
@@ -371,28 +299,20 @@ h2 {
     justify-content: center;
 }
 
-
-.forum {
+/* 
+.foru{
     width: 75%;
     height:75%;
     object-fit: contain;
-}
+} */
 
 .fa-light-fa-file{
     font-size: 2em;
-    /* object-fit: contain;
-    background: #F18009; */
-
+  
 }
 
 
 
-
-/*
-.web-forum {
-    width: 200px;
-    height: 200px;
-} */
 
 
 
