@@ -154,7 +154,7 @@
     }
 
 
-    .container  .grid-container .comp-html {
+    .container  .grid-container .comp-html .img-html {
         width: 25%;
         height: 25%;
         margin-left: auto;
@@ -163,7 +163,7 @@
        
     }
 
-    .container  .grid-container .comp-css {
+    .container  .grid-container .comp-css .img-css {
         width: 25%;
         height: 25%;
         margin-left: auto;
@@ -281,6 +281,16 @@
         font-size: 1em;
  
     }
+
+     /***********Section competences************/
+
+     .img-foru {
+        width: 200px;
+        /* height: 100%;  */ */
+        filter:drop-shadow(3px 3px 3px #000);
+      
+    
+    } 
    
 
 }
@@ -327,16 +337,16 @@
        min-height:100vh; 
     }    
 
-    .container  .grid-container .comp-html {
-        width: 18%;
-        height:18%;
+    .container  .grid-container .comp-html .img-html {
+        width: 25%;
+        height:25%;
         filter:drop-shadow(3px 3px 3px #000);
       
     }
 
-    .container  .grid-container .comp-css {
-        width: 18%;
-        height: 18%;
+    .container  .grid-container .comp-css .img-css {
+        width: 25%;
+        height:25%;
         filter:drop-shadow(3px 3px 3px #000);
        
     }
@@ -405,15 +415,15 @@
     }
 
     .img-foru {
-        width: 15%;
-        height: 85%;
+        width: 200px;
+        /* height: 75%;   */
         filter:drop-shadow(3px 3px 3px #000);
-        /* object-fit: contain;  */
-        
-    }
+      
+    
+    } 
+}
 
 
     
   
 
-}

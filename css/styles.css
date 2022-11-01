@@ -299,12 +299,12 @@ h2 {
     justify-content: center;
 }
 
-/* 
-.foru{
-    width: 75%;
-    height:75%;
-    object-fit: contain;
-} */
+ 
+/* .foru{
+    width: 25%;
+    height:25%;
+    /* object-fit: contain; 
+}  */
 
 .fa-light-fa-file{
     font-size: 2em;
