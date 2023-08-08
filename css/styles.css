@@ -6,7 +6,8 @@
    --text-color-inverse:rgb(255, 255, 255);
    --text-color:#f7c331;
    --sous-titre:#F18009;
-   --sous-titre-over:#f7c331;
+   --sous-titre-over:#010101;
+   --box-shadow:#1f0404;
    --navbar-shallow-color:rgb(39, 55, 70);
    --color-toggle: rgb(255, 255, 255);
    --color-toggle-hover:#F18009;
@@ -65,9 +66,9 @@ header ul {
 
 header ul li{
 
-   position: relative;
-   list-style: none;
-   text-decoration: none;
+    position: relative;
+    list-style: none;
+    text-decoration: none;
 }
 
 header ul li a {
@@ -132,23 +133,24 @@ section h2 {
 
 section a {
     display: inline-block;
-    padding: 8px 10px;
+    padding: 8px 25px;
     text-decoration: none;
     font-size: 1.1em;
-    background: #111; 
-    color:#fff;
+    background:var(--theme-color); 
+    color:white;
     margin-top: 20px;
+    border-radius: 25px;
 } 
 
 #cv{
     /*background-color:var(--text-color);*/
-    background-color:var(--sous-titre);
+    background-color:var(--text-color);
     min-height: 100vh;
 }
 
 /***********Section profil************/
 
- .nom {
+.nom {
     width: 100%;
     font-size: 1.5em;
     color:var(--text-color);
@@ -174,7 +176,7 @@ section a {
 }
 
 .metier span {
-    color: #F18009 ;
+    color: var(--text-color) ;
 }
 
 .phone, .courrier {
@@ -194,7 +196,7 @@ section a {
 /***********Section CV ********/
 
 .cv {
-    width: 10%;
+    width:auto;
     height:25%;
     object-fit: contain;
     color: #f7c331;
@@ -208,10 +210,12 @@ section a {
 
 .container .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap:1.2em;
-    padding: 0 auto;
-    margin-left: 15%;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* gap:1.2em; */
+    
+    padding: 2% auto;
+    margin-left: 15%; 
+    /* margin:auto 5%; */
 }
 
 .container .grid-container .competences span {
@@ -233,7 +237,6 @@ section a {
     justify-content: center;
 
 }
-
 
 h2 {
     color:var(--title-competenteces);
@@ -308,13 +311,6 @@ h2 {
     margin-left: 3%;
     justify-content: center;
 }
-
- 
-/* .foru{
-    width: 25%;
-    height:25%;
-    /* object-fit: contain; 
-}  */
 
 .fa-light-fa-file{
     font-size: 2em;
