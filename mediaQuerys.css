@@ -1,4 +1,69 @@
 @media (max-width:576px) {
+    .container-profil-metier {
+        min-height: 50vh;
+        /* padding: 100px 50px 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        min-height:50vh;   */
+        /* display: flex; */
+    }
+
+    .container .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .photo img {
+        display: none;
+        /* margin-top: -75%;
+        position: relative;
+        width: 100px;
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 0px 6px 5px var(--box-shadow);     */
+    } 
+
+    .containter-cv {
+        min-height: 50vh;
+
+    }
+
+    h5 {
+        
+        text-align:center;
+        
+    } 
+    
+    .container .grid-container .comp-html .img-html, .comp-css .img-css, .comp-js .img-js, .comp-php .img-php,
+    .comp-mysql .img-mysql, .comp-resp .img-resp, .comp-psd .img-psd, .comp-figm .img-figm, .comp-illu .img-illu,
+    .comp-ae .img-ae, .comp-mult .img-mult,.comp-3d .img-3d {
+        width: 15%; 
+        height:auto; 
+        filter:drop-shadow(3px 4px 3px #000); 
+        /* background-color: aqua; */
+    }
+
+    /* .container .grid-container .comp-css .img-css {
+        width:15%;
+        height:auto;
+        /* filter:drop-shadow(3px 3px 3px #000); 
+        
+    } */
+
+}
+
+
+
+@media (max-width:768px) {
+
+    .container .grid-container{
+        display: grid;
+        gap:1.2em;
+        padding: 0 auto;
+        /* margin-left: 15%; */
+    } 
+
     section {
         padding: 100px 50px 50px;
         flex-direction: column;
@@ -65,7 +130,7 @@
         transition: 0.5s;
     }
     .toggle:hover{
-       color:var(--color-toggle-hover);
+        color:var(--color-toggle-hover);
     }
     
 
@@ -77,8 +142,8 @@
     }
 
     header.active .toggle:after {
-       bottom: 14px;
-       transform: rotate(-45deg);
+        bottom: 14px;
+        transform: rotate(-45deg);
     }
 
     .container-profil-metier {
@@ -112,6 +177,12 @@
         color:#fff; 
     }
 
+
+
+
+    
+    /***********Section competences************/
+
     #competences  {
         /* height:15vh;  */
         min-height: 100hv;
@@ -132,14 +203,102 @@
 
 
     h2 span {
-        margin-left: 15%;
         color:#fff; 
         font-size: .7em;
-
     }
 
-   
+    .container .grid-container {
+        margin-left: 0;
+    }
 
+
+    /* .container .grid-container .comp-html .img-html {
+        width: 25%;
+        height: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    } */
+
+    /* .container  .grid-container .comp-css .img-css {
+        width: 25%;
+        height: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    } */
+
+    .container  .grid-container .comp-css .css {
+        filter:drop-shadow(3px 3px 3px #000);
+    }
+
+    .container  .grid-container .comp-js .js {
+        filter:drop-shadow(3px 3px 3px #000);
+    }
+
+    /* .container  .grid-container .comp-php .img-php {
+        width:25%;
+        height: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        filter:drop-shadow(3px 3px 3px #000);
+    } */
+
+    /* .container .grid-container .img-illu {
+        width: 75%;
+        height: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        filter:drop-shadow(3px 3px 3px #000);
+        background-color: aqua;
+    }  */
+
+
+    /* .container .grid-container .img-mult {
+        width: 25%;
+        height: auto;
+        display: block;
+         margin: auto; 
+        filter:drop-shadow(3px 3px 3px #000);
+    } */
+
+    /* .container .grid-container .img-3d {
+        width: 25%;
+        height: 25%;
+        display: block;
+        margin: auto;
+        filter:drop-shadow(3px 3px 3px #000);
+    } */
+
+    .container  .grid-container .comp-rv .img-vr {
+        width: 25%;
+        height:25%;
+        display: block;
+        margin: auto;
+        filter:drop-shadow(3px 3px 3px #000);
+    }
+
+    .container  .grid-container .comp-php .php {
+        filter:drop-shadow(2px 2px 2px #000);
+    }
+    
+    .container  .grid-container .comp-mysql .mysql {
+        filter:drop-shadow(2px 2px 2px #000);
+    } 
+
+    .container h2 {
+        align-content: center;
+        /* background-color: aqua; */
+    }
+
+    h2 {
+        text-align: left;
+    } 
+
+    h4 {
+        text-align: center;
+    
+    }
     /***********Section portfolio************/
 
     #portfolio  {
@@ -149,13 +308,18 @@
 
     #portfolio h2 {
         font-size: 1em;
- 
     }
-   
 
+    /***********Section competences************/
+
+    .img-foru {
+        width: 200px;
+        /* height: 100%;  */ 
+        filter:drop-shadow(3px 3px 3px #000);
+    } 
 }
 
-@media (max-width:768px) {
+@media (max-width:992px) {
 
     
 
@@ -169,7 +333,6 @@
         font-size: 0.8em;
     }
 
-     
     #competences h2 {
         font-size: 1.0em;  
     }  
@@ -181,37 +344,101 @@
     .container .grid-container .competences .sous-titre {
         font-size: 1.0em; 
     }
-
-
 }
 
 
 
-@media (max-width:1200px) {
+@media (min-width:993px) {
 
     #accueil{
         min-height: 100vh;  
     }
 
-     /* .container-profil-metier .nom{
-        height: 300vh;  
+    #competences {
+        min-height:100vh; 
+    }    
+
+    .container .grid-container .comp-html .img-html {
+        width: 25%;
+        height:auto;
+        filter:drop-shadow(3px 3px 3px #000); 
+    }
+
+    .container  .grid-container .comp-css .img-css {
+        width:25%;
+        height:auto;
+        filter:drop-shadow(3px 3px 3px #000);
+    }
+
+    .container  .grid-container .comp-js .img-js {
+        width:25%;
+        height: auto;
+        filter:drop-shadow(3px 3px 3px #000);
+        
+    }
+
+    .container  .grid-container .comp-php .img-php {
+        width: 25%;
+        height:auto;
+        filter:drop-shadow(3px 3px 3px #000);
+    }
+
+    .container  .grid-container .comp-mysql .img-mysql {
+        width: 25%;
+        height:auto;
+        margin-top: 13%;
+        filter:drop-shadow(3px 3px 3px #000);
+    }
+
+    .container  .grid-container .comp-resp .img-resp {
+        width: 25%;
+        height:auto;
+        filter:drop-shadow(3px 3px 3px #000);
+    }
+
+    .container  .grid-container .comp-psd .img-psd {
+        width: 25%;
+        height:auto;
+        filter:drop-shadow(3px 3px 3px #000);
+    }
+
+    .container .grid-container .img-illu {
+        width:25%;
+        height:auto;
+        margin:1% auto;
+        filter:drop-shadow(3px 3px 3px #000);
     } 
 
-    h2 span {
-        margin-left: 15%;
-        color:#fff; 
-    } */
-   
-     /* #accueil {
-      height:50vh; 
-     
-    }    */
+    .container .grid-container .img-figm {
+        width: 25%;
+        height:auto;
+        margin-top: 1%;
+        filter:drop-shadow(3px 3px 3px #000);
+    }
 
-    #competences {
-       min-height:100vh; 
-    }    
-/* 
-     #portfolio {
-        min-height:100vh; 
-    }  */
+    .container .grid-container .img-ae {
+        width: 25%;
+        height:auto;
+        margin:auto;
+        filter:drop-shadow(3px 3px 3px #000);
+    }
+
+    .container .grid-container .img-mult {
+        width: 25%;
+        height: auto;
+        filter:drop-shadow(3px 3px 3px #000);
+    }
+
+    .container .grid-container .img-3d {
+        width:25%;
+        height:auto;
+        filter:drop-shadow(3px 3px 3px #000);
+    }
+
+    .img-foru {
+        width: 200px;
+        /* height: 75%;   */
+        filter:drop-shadow(3px 3px 3px #000);
+    } 
 }
+

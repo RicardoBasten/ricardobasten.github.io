@@ -6,6 +6,8 @@
    --text-color-inverse:rgb(255, 255, 255);
    --text-color:#f7c331;
    --sous-titre:#F18009;
+   --sous-titre-over:#010101;
+   --box-shadow:#1f0404;
    --navbar-shallow-color:rgb(39, 55, 70);
    --color-toggle: rgb(255, 255, 255);
    --color-toggle-hover:#F18009;
@@ -14,6 +16,9 @@
    --title-competenteces:rgb(255, 255, 255);
 }
 
+.mult .img-mult {
+    background-color: #F18009;
+}
 
 *{
     margin: 0;
@@ -57,13 +62,13 @@ header .logo {
 header ul {
     position: relative;
     display: flex;
-} 
+}
 
 header ul li{
 
-   position: relative;
-   list-style: none;
-   text-decoration: none;
+    position: relative;
+    list-style: none;
+    text-decoration: none;
 }
 
 header ul li a {
@@ -84,7 +89,6 @@ header ul li a {
 }
 
 .header ul li a:hover {
-    /*display: block;*/
     background-color: var(--color-menu);
 }
 
@@ -102,41 +106,26 @@ section {
     padding: 150px 100px 100px;
 }
 
-/* 
-.container{
-    min-height: 100vh;
-} */
-
-/* #accueil {
-    height: 25vh;
-
-} */
-
-
-
 h3{
     min-height:100vh;
     padding: 350px 100px 100px;
-   
-}    
+
+}
+
+.photo img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -8%;
+    box-shadow: 0px 6px 5px #1f0404;
+
+}
 
 #portfolio {
     min-height:100vh;
     /* padding: 150px 100px 100px; */
 
-} 
-
-
-
-
-
-/* section {
-    height: 60vh;
-} */
-
-/* h4 {
-   padding-bottom: 50%;
-} */
+}
 
 section h2 {
     font-size: 1.5em;
@@ -144,30 +133,30 @@ section h2 {
 
 section a {
     display: inline-block;
-    padding: 8px 10px;
+    padding: 8px 25px;
     text-decoration: none;
     font-size: 1.1em;
-    background: #111; /*cambiar color*/
-    color:#fff;
-    margin-top: 20px;/*cambiar color*/
-}
+    background:var(--theme-color); 
+    color:white;
+    margin-top: 20px;
+    border-radius: 25px;
+} 
 
-section:nth-child(odd) {
-    position: relative;
-    justify-content: left;
-    align-items: center;
-    color: var(--sous-tritre-competences);
+#cv{
+    /*background-color:var(--text-color);*/
+    background-color:var(--text-color);
+    min-height: 100vh;
 }
 
 /***********Section profil************/
 
- .nom { 
+.nom {
     width: 100%;
     font-size: 1.5em;
     color:var(--text-color);
     text-align: left;
     /* align-items:flex-start; */
-}  
+}
 
 .nom span {
     color: #F18009 ;
@@ -183,11 +172,11 @@ section:nth-child(odd) {
     color:#fff;
     text-align: right;
     margin: 0 auto;
-    
+
 }
 
 .metier span {
-    color: #F18009 ;
+    color: var(--text-color) ;
 }
 
 .phone, .courrier {
@@ -207,10 +196,11 @@ section:nth-child(odd) {
 /***********Section CV ********/
 
 .cv {
-    width: 10%;
+    width:auto;
     height:25%;
     object-fit: contain;
     color: #f7c331;
+    
 }
 
 
@@ -218,25 +208,19 @@ section:nth-child(odd) {
 
 /***********Section compétences********/
 
-h2 {
-    margin-left: 15%;
-}
-
 .container .grid-container {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap:1.2em;
-    padding: 0 auto;
-    margin-left: 15%;
-  
-   
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* gap:1.2em; */
+    
+    padding: 2% auto;
+    margin-left: 15%; 
+    /* margin:auto 5%; */
 }
 
 .container .grid-container .competences span {
     display: block;
     font-size: .9em;
-   
 }
 
 
@@ -244,99 +228,28 @@ h2 {
     font-size: 1.3em;
     color:var( --text-color);
     font-weight: 700;
-   
 }
-
 
 .container .grid-container .competences .sous-titre {
     font-size: 1.1em;
     color:var( --sous-titre);
-    margin-left: 3%; 
+    margin-left: 3%;
     justify-content: center;
- 
+
 }
-
-
-
-
-/* .container-portfolio .grid-container-portolio .travaux {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap:2em;
-    padding: 0;
-} */
-
-
-
-/* .container-portfolio .grid-container-portfolio .travaux  {
-    display: block;
-    width: 5em;
-    height: 5em;
-    color: #F18009;
-    border: 1px solid;
-} */
 
 h2 {
     color:var(--title-competenteces);
-   
-    
 }
 
 .competences-prog span {
     margin-left: 0;
 }
 
-.container-competences h4{
-    color:var(--text-color);
-    
-}
-
-.html, .css, .js, .fb, .css-grid, .total-fb, .pho, .illu{
-    color:var(--text-color);
-    margin-top: 10px;
-    font-size: 1.1em;
-}
-
-.comp-html{
-    width: 70px;
-}
-.comp-css{
-    width: 50px;
-}
-
-.comp-js {
-    width: 40px;
-}
-
-.comp-fb {
-    width: 70px; 
-}
-.comp-css-grid {
-    width: 60px;
-}
 
 .comp-pho {
     width: 80px;
-}
-
-.comp-illu {
-    width: 40px;
-}
-
-.total-html, .total-css, .total-js, .total-fb, .total-css-grid,.total-pho, .total-illu{
-    width: 100px;
-    border: 1px solid #ffffff;
-}
-
-
-.comp-html, .comp-css, .comp-fb, .comp-css-grid, .comp-js, .comp-pho, .comp-illu  {
-    display: block;
-    position: relative;
-    background: #F87652;
-    text-align: center;
-    height: 1em;
-    line-height: 1.1em;
-    }
+} 
 
 .container .design span {
     display: inline;
@@ -352,14 +265,13 @@ h2 {
     /* gap:10px;  */
     display: flex;
     width: 100%;
-  
-    
-} 
 
-.container .competences {
+
+}
+
+.container h2 {
     color: #fff;
     
-   
 }
 
 .container .competences span {
@@ -371,7 +283,7 @@ h2 {
 
 /*#cv {
    display: none;
-  
+
 }
 
 /***********section portolio*************/
@@ -383,15 +295,8 @@ h2 {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap:1.2em;
     padding: 0 auto;
-    margin-left: 15%;
+    /* margin-left: 15%; */
 }
-
-/* .container-port .grid-container-port .portfolio span {
-    display: block;
-    font-size: .9em;
-   
-} */
-
 
 .container .grid-cont-port .portfolio .projets .titre {
     font-size: 1.3em;
@@ -403,34 +308,19 @@ h2 {
 .container .grid-cont-port .projets .sous-titre {
     font-size: 1.1em;
     color:var( --sous-titre);
-    margin-left: 3%; 
+    margin-left: 3%;
     justify-content: center;
-}
-
-
-.forum {
-    width: 75%;
-    height:75%;
-    object-fit: contain;
 }
 
 .fa-light-fa-file{
     font-size: 2em;
-    /* object-fit: contain;
-    background: #F18009; */
-
+  
 }
 
 
 
 
-/* 
-.web-forum {
-    width: 200px;
-    height: 200px;
-} */
 
-    
 
 
 
