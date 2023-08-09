@@ -25,7 +25,10 @@
     .container-cv {
         min-height: 100vh;
         /* width: 100%; */
+    }
 
+    #cv {
+        width: 100%;
     }
 
     h5 {
