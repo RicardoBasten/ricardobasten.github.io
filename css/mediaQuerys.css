@@ -1,76 +1,9 @@
-@media (max-width:576px) {
-    .container-profil-metier {
-        min-height: 100vh;
-        /* padding: 100px 50px 50px; */
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-    }
+/****************************** max-width 600px ******************************/
 
-    .container .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    }
+@media only screen and (max-width: 600px) {
 
-    .photo img {
-        display: none;
-        /* margin-top: -75%;
-        position: relative;
-        width: 100px;
-        height: auto;
-        border-radius: 50%;
-        box-shadow: 0px 6px 5px var(--box-shadow);     */
-    }
-
-    #cv {
-        width: 100%;
-        min-height: 100vh;
-        background-color:var(--text-color);
-        
-    }
-
-    h5 {
-
-        text-align:center;
-
-    }
-
-    .container .grid-container .comp-html .img-html, .comp-css .img-css, .comp-js .img-js, .comp-php .img-php,
-    .comp-mysql .img-mysql, .comp-resp .img-resp, .comp-psd .img-psd, .comp-figm .img-figm, .comp-illu .img-illu,
-    .comp-ae .img-ae, .comp-mult .img-mult,.comp-3d .img-3d {
-        width: 15%;
-        height:auto;
-        filter:drop-shadow(3px 4px 3px #000);
-        /* background-color: aqua; */
-    }
-
-    /* .container .grid-container .comp-css .img-css {
-        width:15%;
-        height:auto;
-        /* filter:drop-shadow(3px 3px 3px #000);
-
-    } */
-
-}
-
-
-
-@media (max-width:768px) {
-
-    .container .grid-container{
-        display: grid;
-        gap:1.2em;
-        padding: 0 auto;
-        /* margin-left: 15%; */
-    }
-
-    section {
-        padding: 100px 50px 50px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        min-height:50vh;
+    #header .logo {
+        font-size: 1em;
     }
 
     header ul {
@@ -82,11 +15,236 @@
         text-align: center;
         overflow: auto;
         transition: 0.5s;
-        background: #111;
+        background:var(--background-color-mobil);
         flex-direction: column;
         opacity: 0;
         transform: translateY(-100%);
     }
+/* 
+    header {
+      
+        background-color: var(--theme-color);
+        /* z-index: 1000; 
+        box-shadow: 0px 6px 5px #1f0404;
+    }  */
+
+    header.active ul {
+        opacity: 1;
+        top: 80px;
+        transform: translateY(0);
+    }
+
+    header ul li a {
+        margin: 5px 0;
+        font-size: 1.1em;
+        z-index: 1000;
+    
+    }
+
+    .toggle {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .toggle:before {
+        content: '';
+        position: absolute;
+        top:4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        box-shadow: 0 10px 0 #fff;
+        transition: 0.5s;
+    }
+
+    .toggle:after {
+        content:'';
+        position: absolute;
+        bottom:4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        transition: 0.5s;
+    }
+
+    .toggle:hover{
+        color:var(--toggle-over);
+    }
+
+    header.active .toggle:before {
+        top: 14px;
+        transform: rotate(45deg);
+        box-shadow: 0 0 0 #fff;
+        
+
+    }
+
+    header.active .toggle:after {
+        bottom: 14px;
+        transform: rotate(-45deg);
+        color:var(--toggle-over);
+    }
+
+    .photo {
+        text-align: center;
+    }
+
+    .photo img {
+        width: 30%;
+        height: auto;
+        margin-bottom: 15%;
+    }
+
+    .front-end  {
+        margin-top: 5%;
+    }
+
+    .img-3d {
+        margin-bottom: 5%;
+    }
+
+    .container-profil-metier {
+        display: grid;
+        align-content: start;
+        font-size: .8em;
+        
+    }
+
+    .container-profil-metier .nom{
+        font-size: 1em;
+    }
+
+    .metier p, .contact .phone, .courrier {
+        text-align: left;
+        font-size: 1em;
+    }
+
+    .grid-container {
+        background-color:var(--background-color);
+        filter:drop-shadow(3px 4px 3px #000);
+    }
+
+    .container h4, .container-port h4 {
+        color:var(--sous-titre);
+        font-size: .7em;
+    }
+
+    .container-cv {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container-cv .cv  {
+        font-size: .6em;
+    }
+
+    .grid-container {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, (1, 1fr));
+    }
+
+    .grid-container img {
+        display: block;
+        width: 20%;
+    }
+
+    .grid-container h5, .grid-container-port h5 {
+        font-size: .6em;
+        color:var(--sous-titre);
+    }
+
+    .container .grid-container .comp-html .img-html, .comp-css .img-css, .comp-js .img-js, .comp-php .img-php,
+    .comp-mysql .img-mysql, .comp-resp .img-resp, .comp-psd .img-psd, .comp-figm .img-figm, .comp-illu .img-illu,
+    .comp-ae .img-ae, .comp-mult .img-mult, .comp-3d .img-3d {
+        width: 15%;
+        height:auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2% 2%;
+        filter:drop-shadow(3px 4px 3px #000);
+    }
+
+
+    .front-end, .back-end, .resp, .grap, .mult, .trois-d, .foru {
+        text-align: center;
+    }
+
+    .back-end, .resp, .grap, .mult, .trois-d {
+        margin-top: 6%;
+    }
+
+    .img-foru{
+        width: 35%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .grid-container , .grid-container-port {
+        background-color:var(--background-color);
+        filter:drop-shadow(3px 4px 3px #000);
+        border-radius: 25px;
+        margin-top: 5%;
+    }
+
+    
+
+
+    .grid-container-port .projets .forum img {
+        display: block;
+        width: 35%;
+        margin-left: auto;
+        margin-right: auto;
+        padding:  2% 4%;
+        
+    }
+
+    .droits {
+        text-align: center;
+        margin-bottom: 5%;
+        font-size: .6em;
+    }
+
+
+}
+
+
+/****************************** min-width 601px ******************************/
+
+@media only screen and (min-width:601px) {
+
+    #header .logo {
+        font-size: 1.2em;
+    }
+
+    header ul {
+        position:absolute;
+        left: 0;
+        width: 100%;
+        height: calc(200vh - 80px);
+        padding: 50px 100px;
+        text-align: center;
+        overflow: auto;
+        transition: 0.5s;
+        background:var(--background-color-mobil);
+        flex-direction: column;
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    /* #header {
+      
+        background-color: var(--theme-color);
+         z-index: 1000; 
+        box-shadow: 0px 6px 5px #1f0404;
+   }   */
 
     header.active ul {
         opacity: 1;
@@ -129,22 +287,209 @@
         z-index: 1;
         transition: 0.5s;
     }
-    .toggle:hover{
-        color:var(--color-toggle-hover);
-    }
 
+    /* .toggle a:hover{
+        color:var(--toggle-over);
+    } */
 
     header.active .toggle:before {
         top: 14px;
         transform: rotate(45deg);
         box-shadow: 0 0 0 #fff;
-
     }
 
     header.active .toggle:after {
         bottom: 14px;
         transform: rotate(-45deg);
     }
+
+
+    #accueil {
+        min-height:100vh;
+    }
+
+    .photo {
+        text-align: center;
+    }
+
+    .photo img {
+        width: 20%;
+        height: auto;
+        margin-bottom: 15%;
+    }
+
+    .container-profil-metier {
+        display: grid;
+        align-content:center;
+        font-size: 1em;
+    }
+
+    .container-cv {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #cv {
+        width: 100%;
+        background-color:var(--text-color);
+        min-height: 100vh;
+    }
+
+    .container-cv .cv  {
+        font-size: .8em;
+    }
+
+
+
+    .grid-container, .grid-container-port {
+        background-color:var(--background-color);
+        filter:drop-shadow(3px 4px 3px #000);
+        border-radius: 25px;
+
+    }
+
+    .container h4, .container-port h4 {
+        color:var(--sous-titre);
+        font-size: 1.0em;
+    }
+
+    .front-end  {
+        margin-top: 5%;
+    }
+
+    .front-end, .back-end, .resp, .grap, .mult, .trois-d, .foru {
+        text-align: center;
+    }
+
+    .grid-container img, .grid-container-port .projets .forum .img-forum{
+        display: block;
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        padding:  2% 0;
+    }
+
+    .container .grid-container .comp-html .img-html, .comp-css .img-css, .comp-js .img-js, .comp-php .img-php,
+    .comp-mysql .img-mysql, .comp-resp .img-resp, .comp-psd .img-psd, .comp-figm .img-figm, .comp-illu .img-illu,
+    .comp-ae .img-ae, .comp-mult .img-mult, .comp-3d .img-3d{
+        width: 15%;
+        height:auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1% 1%;
+        filter:drop-shadow(3px 4px 3px #000);
+    }
+
+    .back-end,  .resp, .grap, .mult, .trois-d {
+        margin-top: 8%;
+    }
+
+
+    .projets, .foru {
+        margin-top: 5%;
+    }
+
+    .droits {
+        text-align: center;
+        margin-bottom: 5%;
+    }
+}
+
+/****************************** min-width 768px ******************************/
+
+@media only screen and (min-width: 767px) {
+
+    #accueil {
+        min-height:100vh;
+    }
+
+
+    #header .logo {
+        font-size: 1.5em;
+        
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    #header ul {
+        z-index: -1;
+    }
+
+    .container .grid-container{
+        display: grid;
+        /* gap:1.2em; */
+        padding: 0 auto;
+    }
+
+    .container h4 {
+        text-align: left;
+        margin-bottom: 2%;
+        font-size: .7em;
+    }
+
+    .container h4, .container-port h5 {
+        font-size: .8em;
+        color:var(--sous-titre);
+        text-align: left;
+    }
+
+    .graphiques, .multimedia, .dimensions {
+        margin-top: 8%;
+    }
+
+    .resp {
+        margin-top: 5%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grid-container h5 {
+        font-size: .6em;
+        color:#fff;
+    }
+
+    .grid-container .responsive {
+        margin-top: 0;
+
+    }
+
+    .container .grid-container .comp-html .img-html, .comp-css .img-css, .comp-js .img-js, .comp-php .img-php,
+    .comp-mysql .img-mysql, .comp-resp .img-resp, .comp-psd .img-psd, .comp-figm .img-figm, .comp-illu .img-illu,
+    .comp-ae .img-ae, .comp-mult .img-mult, .comp-3d .img-3d{
+        width: 18%;
+        height:auto;
+        padding: 1% 1%;
+        filter:drop-shadow(3px 4px 3px #000);
+    }
+
+    .front-end, .back-end {
+        margin-top: 5%;
+    }
+
+    section {
+        padding: 100px 50px 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        min-height:100vh;
+    }
+
+    /* header.active ul {
+        opacity: 1;
+        top: 80px;
+        transform: translateY(0);
+    } 
+
+     header ul li a {
+        margin: 5px 0;
+        font-size: 1.1em;
+    }  */
 
     .container-profil-metier {
         flex-direction: column;
@@ -212,21 +557,6 @@
     }
 
 
-    /* .container .grid-container .comp-html .img-html {
-        width: 25%;
-        height: 25%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10px;
-    } */
-
-    /* .container  .grid-container .comp-css .img-css {
-        width: 25%;
-        height: 25%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10px;
-    } */
 
     .container  .grid-container .comp-css .css {
         filter:drop-shadow(3px 3px 3px #000);
@@ -236,60 +566,7 @@
         filter:drop-shadow(3px 3px 3px #000);
     }
 
-    /* .container  .grid-container .comp-php .img-php {
-        width:25%;
-        height: 25%;
-        margin-left: auto;
-        margin-right: auto;
-        filter:drop-shadow(3px 3px 3px #000);
-    } */
-
-    /* .container .grid-container .img-illu {
-        width: 75%;
-        height: 75%;
-        margin-left: auto;
-        margin-right: auto;
-        filter:drop-shadow(3px 3px 3px #000);
-        background-color: aqua;
-    }  */
-
-
-    /* .container .grid-container .img-mult {
-        width: 25%;
-        height: auto;
-        display: block;
-         margin: auto;
-        filter:drop-shadow(3px 3px 3px #000);
-    } */
-
-    /* .container .grid-container .img-3d {
-        width: 25%;
-        height: 25%;
-        display: block;
-        margin: auto;
-        filter:drop-shadow(3px 3px 3px #000);
-    } */
-
-    .container  .grid-container .comp-rv .img-vr {
-        width: 25%;
-        height:25%;
-        display: block;
-        margin: auto;
-        filter:drop-shadow(3px 3px 3px #000);
-    }
-
-    .container  .grid-container .comp-php .php {
-        filter:drop-shadow(2px 2px 2px #000);
-    }
-
-    .container  .grid-container .comp-mysql .mysql {
-        filter:drop-shadow(2px 2px 2px #000);
-    }
-
-    .container h2 {
-        align-content: center;
-        /* background-color: aqua; */
-    }
+    
 
     h2 {
         text-align: left;
@@ -317,128 +594,15 @@
         /* height: 100%;  */
         filter:drop-shadow(3px 3px 3px #000);
     }
-}
 
-@media (max-width:992px) {
-
-
-
-    h2 span {
-        margin-left: 15%;
-        color:#fff;
-        font-size: .9em;
-    }
-
-    .container-profil-metier .metier {
-        font-size: 0.8em;
-    }
-
-    #competences h2 {
-        font-size: 1.0em;
-    }
-
-    .container .grid-container .competences .titre {
-        font-size: 1.0em;
-    }
-
-    .container .grid-container .competences .sous-titre {
-        font-size: 1.0em;
-    }
 }
 
 
 
-@media (min-width:993px) {
 
-    #accueil{
-        min-height: 100vh;
-    }
 
-    #competences {
-        min-height:100vh;
-    }
 
-    .container .grid-container .comp-html .img-html {
-        width: 25%;
-        height:auto;
-        filter:drop-shadow(3px 3px 3px #000);
-    }
 
-    .container  .grid-container .comp-css .img-css {
-        width:25%;
-        height:auto;
-        filter:drop-shadow(3px 3px 3px #000);
-    }
 
-    .container  .grid-container .comp-js .img-js {
-        width:25%;
-        height: auto;
-        filter:drop-shadow(3px 3px 3px #000);
 
-    }
-
-    .container  .grid-container .comp-php .img-php {
-        width: 25%;
-        height:auto;
-        filter:drop-shadow(3px 3px 3px #000);
-    }
-
-    .container  .grid-container .comp-mysql .img-mysql {
-        width: 25%;
-        height:auto;
-        margin-top: 13%;
-        filter:drop-shadow(3px 3px 3px #000);
-    }
-
-    .container  .grid-container .comp-resp .img-resp {
-        width: 25%;
-        height:auto;
-        filter:drop-shadow(3px 3px 3px #000);
-    }
-
-    .container  .grid-container .comp-psd .img-psd {
-        width: 25%;
-        height:auto;
-        filter:drop-shadow(3px 3px 3px #000);
-    }
-
-    .container .grid-container .img-illu {
-        width:25%;
-        height:auto;
-        margin:1% auto;
-        filter:drop-shadow(3px 3px 3px #000);
-    }
-
-    .container .grid-container .img-figm {
-        width: 25%;
-        height:auto;
-        margin-top: 1%;
-        filter:drop-shadow(3px 3px 3px #000);
-    }
-
-    .container .grid-container .img-ae {
-        width: 25%;
-        height:auto;
-        margin:auto;
-        filter:drop-shadow(3px 3px 3px #000);
-    }
-
-    .container .grid-container .img-mult {
-        width: 25%;
-        height: auto;
-        filter:drop-shadow(3px 3px 3px #000);
-    }
-
-    .container .grid-container .img-3d {
-        width:25%;
-        height:auto;
-        filter:drop-shadow(3px 3px 3px #000);
-    }
-
-    .img-foru {
-        width: 200px;
-        /* height: 75%;   */
-        filter:drop-shadow(3px 3px 3px #000);
-    }
-}
 
