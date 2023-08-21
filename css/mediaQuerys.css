@@ -111,17 +111,28 @@
     .container-profil-metier {
         display: grid;
         align-content: start;
-        font-size: .8em;
+        grid-template-columns: 120%;
         
+
     }
 
     .container-profil-metier .nom{
-        font-size: 1em;
+        font-size: .8em;
     }
 
-    .metier p, .contact .phone, .courrier {
+    .metier .titre p{
+        font-size: .9em;
+    }
+
+    .contact, .phone {
         text-align: left;
-        font-size: 1em;
+        font-size: .7em;
+    }
+
+
+
+    .courrier p{
+        font-size: .9em;
     }
 
     .grid-container {
@@ -199,7 +210,7 @@
 
     .grid-container-port .projets .forum img {
         display: block;
-        width: 35%;
+        width: 50%;
         margin-left: auto;
         margin-right: auto;
         padding:  2% 4%;
@@ -322,6 +333,8 @@
         display: grid;
         align-content:center;
         font-size: 1em;
+        grid-template-columns: 120%;
+    
     }
 
     .container-cv {
