@@ -1,0 +1,732 @@
+/****************************** max-width 600px ******************************/
+
+@media only screen and (max-width: 600px) {
+
+    #header .logo {
+        font-size: 1em;
+    }
+    
+    /* body {
+        background-color:green;
+    } */
+
+    #header ul {
+        position:absolute;
+        left: 0;
+        width: 100%;
+        height: calc(200vh - 80px);
+        padding: 50px 100px;
+        text-align: center;
+        overflow: auto;
+        transition: 0.5s;
+        background:var(--background-color-mobil);
+        flex-direction: column;
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    #header.active ul {
+        opacity: 1;
+        top: 80px;
+        transform: translateY(0);
+    }
+
+    #header ul li a {
+        margin: 5px 0;
+        font-size: 1.1em;
+        z-index: 1000;
+    }
+
+    .toggle {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .toggle:before {
+        content: '';
+        position: absolute;
+        top:4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        box-shadow: 0 10px 0 #fff;
+        transition: 0.5s;
+    }
+
+    .toggle:after {
+        content:'';
+        position: absolute;
+        bottom:4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        transition: 0.5s;
+    }
+
+    .toggle:hover{
+        color:var(--toggle-over);
+    }
+
+    header.active .toggle:before {
+        top: 14px;
+        transform: rotate(45deg);
+        box-shadow: 0 0 0 #fff;
+        
+
+    }
+
+    header.active .toggle:after {
+        bottom: 14px;
+        transform: rotate(-45deg);
+        color:var(--toggle-over);
+    }
+
+    .photo img{
+        display: block;
+        width: 20%;
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 0px 6px 5px #1f0404;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+    }
+
+    .front-end  {
+        margin-top: 5%;
+    }
+
+    .img-3d {
+        margin-bottom: 5%;
+    }
+
+    .container-profil-metier {
+        display: grid;
+        align-content:left;
+        grid-template-columns: 120%;
+    }
+
+    .container-profil-metier .nom{
+        font-size: .9em;
+    }
+
+    .metier  p{
+        font-size: .8em;
+    }
+
+    .metier p, .contact .phone, .contact .courrier p{
+        font-size: .8em; 
+    } 
+
+    .courrier p{
+        font-size: .9em;
+    }
+
+    .grid-container {
+        background-color:var(--background-color);
+        filter:drop-shadow(3px 4px 3px #000);
+    }
+
+    .container h4, .container-port h4 {
+        color:var(--sous-titre);
+        font-size: .7em;
+    }
+
+    .container-cv {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container-cv .cv  {
+        font-size: .6em;
+    }
+
+    .grid-container {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, (1, 1fr));
+    }
+
+    .grid-container img {
+        display: block;
+        width: 20%;
+    }
+
+    .grid-container h5, .grid-container-port h5 {
+        font-size: .6em;
+        color:var(--sous-titre);
+    }
+
+    .container .grid-container .comp-html .img-html, .comp-css .img-css, .comp-js .img-js, .comp-php .img-php,
+    .comp-mysql .img-mysql, .comp-resp .img-resp, .comp-psd .img-psd, .comp-figm .img-figm, .comp-illu .img-illu,
+    .comp-ae .img-ae, .comp-mult .img-mult, .comp-3d .img-3d {
+        width: 15%;
+        height:auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2% 2%;
+        filter:drop-shadow(3px 4px 3px #000);
+    }
+
+
+    .front-end, .back-end, .resp, .grap, .mult, .trois-d, .foru {
+        text-align: center;
+    }
+
+    .back-end, .resp, .grap, .mult, .trois-d {
+        margin-top: 6%;
+    }
+
+    .img-foru{
+        width: 35%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .grid-container , .grid-container-port {
+        background-color:var(--background-color);
+        filter:drop-shadow(3px 4px 3px #000);
+        border-radius: 25px;
+        margin-top: 5%;
+    }
+
+    
+
+
+    .forum img, .chateau img {
+        display: block;
+        width: 30%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .chateau img {
+        display: block;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        padding:  2% 0;
+    }
+
+    .droits {
+        text-align: center;
+        margin-bottom: 5%;
+        font-size: .6em;
+    }
+
+
+}
+
+
+/****************************** min-width 601px ******************************/
+
+@media only screen and (min-width:601px) and  (max-width:766px) {
+
+    #header .logo {
+        font-size: 1.2em;
+    }
+
+    #header ul {
+        position:absolute; 
+        left: 0;
+        width: 100%;
+        height: calc(200vh - 80px); 
+        padding: 50px 100px; 
+        text-align: center; 
+        overflow: auto; 
+        transition: 0.5s; 
+        background:var(--background-color-mobil); 
+        flex-direction: column;
+        opacity: 0;
+        transform: translateY(-100%); 
+    } 
+
+    #header.active ul {
+        opacity: 1;
+        top: 80px;
+        transform: translateY(0);
+    }
+
+    #header ul li a {
+        margin: 5px 0;
+        font-size: 1.1em;
+    } 
+
+    .toggle {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .toggle:before {
+        content: '';
+        position: absolute;
+        top:4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        box-shadow: 0 10px 0 #fff;
+        transition: 0.5s;
+    }
+
+    .toggle:after {
+        content:'';
+        position: absolute;
+        bottom:4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        transition: 0.5s;
+    }
+
+    header.active .toggle:before {
+        top: 14px;
+        transform: rotate(45deg);
+        box-shadow: 0 0 0 #fff;
+    }
+
+    header.active .toggle:after {
+        bottom: 14px;
+        transform: rotate(-45deg);
+    }
+
+
+    #accueil {
+        min-height:100vh;
+    }
+
+    .photo img{
+        display: block;
+        width: 22%;
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 0px 6px 5px #1f0404;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+    }
+
+    .container-profil-metier {
+        align-content:left;
+        grid-template-columns: 100%;
+    }
+
+    .container-profil-metier .nom {
+        font-size: 1em; 
+    }
+
+    .metier p, .contact .phone, .contact .courrier {
+        font-size: .8em; 
+    }
+    
+
+
+    .container-cv {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #cv {
+        width: 100%;
+        background-color:var(--text-color);
+        min-height: 100vh;
+    }
+
+    .container-cv .cv  {
+        font-size: .8em;
+        
+    }
+
+    .front {
+        padding: 1% 0 0 0;
+    }
+
+    .grid-container {
+        padding-bottom: 5%;
+    }
+
+    .grid-container, .grid-container-port {
+        background-color:var(--background-color);
+        filter:drop-shadow(3px 4px 3px #000);
+        border-radius: 25px;
+
+    }
+
+    .container h4, .container-port h4 {
+        color:var(--sous-titre);
+        font-size: 1.0em;
+    }
+
+    .front-end  {
+        margin-top: 5%;
+    }
+
+    .front-end, .back-end, .resp, .grap, .mult, .trois-d, .foru {
+        text-align: center;
+    }
+
+    .grid-container img, .grid-container-port .projets .forum .img-forum{
+        display: block;
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        padding:  2% 0;
+    }
+
+    .container h5, .grid-container-port h5 {
+        color:var(--title-competences);
+    }
+
+    .container .grid-container .comp-html .img-html, .comp-css .img-css, .comp-js .img-js, .comp-php .img-php,
+    .comp-mysql .img-mysql, .comp-resp .img-resp, .comp-psd .img-psd, .comp-figm .img-figm, .comp-illu .img-illu,
+    .comp-ae .img-ae, .comp-mult .img-mult, .comp-3d .img-3d{
+        width: 15%;
+        height:auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1% 1%;
+        filter:drop-shadow(3px 4px 3px #000);
+    }
+
+    .back-end,  .resp, .grap, .mult, .trois-d {
+        margin-top: 8%;
+    }
+
+    .grid-container-port .projets .foru{
+        margin-top: 5%;
+    }
+    .projets, .foru {
+        margin-top: 5%;
+    }
+
+    .foru {
+        padding:  3% 0 0 0;
+    }
+
+    .forum img, .chateau img {
+        display: block;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        padding:  2% 0;
+    }
+    
+    .droits {
+        text-align: center;
+        margin-bottom: 5%;
+        font-size: .7em;
+        color:var(--sous-titre);
+    }
+
+}
+
+
+/****************************** min-width 768px ******************************/
+
+@media only screen and (min-width: 767px) {
+
+
+    #accueil {
+        min-height:100vh;
+    }
+
+
+    #header .logo {
+        font-size: 1.2em;
+        
+    }
+
+    #header ul {
+        font-size: .7em;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .photo img{
+        display: block;
+        width: 23%;
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 0px 6px 5px #1f0404;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+    }
+
+    .container-profil-metier {
+        
+        /* flex-direction: column; */
+        padding: 0 7%;
+    }
+
+    .container-profil-metier .nom {
+        font-size: 1.5em;
+        color:var(--primary-color); 
+    }
+
+    .container-profil-metier .metier p, .contact .phone, .contact .courrier { 
+        text-align: left;
+        font-size: 1.1em;
+        color:#fff;
+    }  
+
+.container .grid-container {
+        display: grid;
+        padding: 0 auto;
+        text-align: center;
+    }
+
+    .container .grid-container {
+        display: grid;
+        padding: 0 auto;
+        text-align: center;
+    }
+
+    .container .grid-container img {
+        width: 20%;
+    }
+
+    .grid-container , .grid-container-port {
+        background-color:var(--background-color);
+        filter:drop-shadow(3px 4px 3px #000);
+        border-radius: 25px;
+    }
+
+
+
+
+    .container h4, .container-port h4 {
+        text-align: left;
+        margin-bottom: 2%;
+        font-size: .8em;
+        color:var(--sous-titre);
+    }
+
+    .container h4, .container-port h5 {
+        font-size: .8em;
+        color:var(--sous-titre);
+        text-align: left;
+    }
+
+    .graphiques, .multimedia, .dimensions {
+        margin-top: 8%;
+    }
+
+    .resp {
+        margin-top: 5%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .container h4 {
+        font-size: .7em;
+        
+    }
+
+    .grid-container h5 {
+        font-size: .6em;
+        color:#fff;
+    }
+
+    .grid-container .responsive {
+        margin-top: 0;
+    }
+
+   .front-end, .back-end {
+        margin-top: 5%;
+    }
+
+    section {
+        padding: 100px 50px 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        min-height:100vh;
+    }
+
+
+
+
+    /***********Section competences************/
+
+    #competences  {
+        /* height:15vh;  */
+        min-height: 100hv;
+    }
+
+    #competences h2 {
+        font-size: 1em;
+    }
+
+    #competences .titre {
+        font-size: .9em;
+    }
+
+    #competences .sous-titre {
+        font-size: .8em;
+    }
+
+
+
+    h2 span {
+        color:#fff;
+        font-size: .7em;
+    }
+
+    .container .grid-container {
+        margin-left: 0;
+    }
+
+
+
+    .container  .grid-container .comp-css .css {
+        filter:drop-shadow(3px 3px 3px #000);
+    }
+
+    .container  .grid-container .comp-js .js {
+        filter:drop-shadow(3px 3px 3px #000);
+    }
+
+    
+
+    h2 {
+        text-align: left;
+    }
+
+    h4 {
+        text-align: center;
+
+    }
+    /***********Section portfolio************/
+
+
+    .grid-container-port {
+        display: flex;
+        align-content:center;
+        padding: 0 auto;
+        text-align: center;
+    }
+
+    .projets .foru, .projets .trois-d {
+        text-align: center;
+    }
+
+
+
+    #portfolio  {
+        min-height:100vh;
+        
+    }
+
+    #portfolio h2 {
+        font-size: 1em;
+    }
+
+    .forum img, .chateau img {
+        width: 40%;
+        height: auto;
+        filter:drop-shadow(3px 3px 3px #000);
+    }
+
+
+
+}
+
+/* 
+
+/****************************** min-width 992px ******************************/
+/* 
+@media only screen and (min-width:992px) {
+
+
+    .container .grid-container .comp-html .img-html, .comp-css .img-css, .comp-js .img-js, .comp-php .img-php,
+    .comp-mysql .img-mysql, .comp-resp .img-resp, .comp-psd .img-psd, .comp-figm .img-figm, .comp-illu .img-illu,
+    .comp-ae .img-ae, .comp-mult .img-mult,.comp-3d .img-3d {
+        width: 20%;
+        height:auto;
+        filter:drop-shadow(3px 4px 3px #000);
+    }
+
+
+
+    h2 span {
+        margin-left: 15%;
+        color:#fff;
+        font-size: .9em;
+    }
+
+    .container-profil-metier .metier {
+        font-size: 0.8em;
+    }
+
+    #competences h2 {
+        font-size: 1.0em;
+    }
+
+    .container .grid-container .competences .titre {
+        font-size: 1.0em;
+    }
+
+    .container .grid-container .competences .sous-titre {
+        font-size: 1.0em;
+    }
+} */
+
+
+/* 
+@media only screen and  (min-width:1200px) {
+
+    #accueil{
+        min-height: 100vh;
+        background-color:brown;
+    }
+
+    #competences {
+        min-height:100vh;
+    }
+
+    .container .grid-container .comp-html .img-html, .comp-css .img-css, .comp-js .img-js, .comp-php .img-php,
+    .comp-mysql .img-mysql, .comp-resp .img-resp, .comp-psd .img-psd, .comp-figm .img-figm, .comp-illu .img-illu,
+    .comp-ae .img-ae, .comp-mult .img-mult,.comp-3d .img-3d {
+        width: 20%;
+        height:auto;
+        filter:drop-shadow(3px 4px 3px #000);
+    }
+
+    .img-foru {
+        width: 200px;
+        /* height: 75%;   
+        filter:drop-shadow(3px 3px 3px #000);
+    }
+}
+ */
+
+
+
+
+
+
+
+
+
+
+ 

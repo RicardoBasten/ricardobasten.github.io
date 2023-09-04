@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/mediaQuerys.css">
+    <link rel="stylesheet" href="/css/mediaQuerysLandscape.css">
+
     <script src="https://kit.fontawesome.com/f67914e8a0.js" crossorigin="anonymous"></script>
     <title>Mon website</title>
 </head>
@@ -13,7 +15,7 @@
     <header id="header">
         <a href="#" class="logo">.rbc{}</a>
         <ul>
-            <li><a href="#accueil" onclick="toggle()">Accueil</a></li><hr/> 
+            <li><a href="#accueil" onclick="toggle()">Accueil</a></li><hr/>
             <li><a href="#cv" onclick="toggle()">CV</a></li><hr/>
             <li><a href="#competences" onclick="toggle()">Compétences</a></li><hr/>
             <li><a href="#portfolio" onclick="toggle()">Portfolio</a></li>
@@ -29,17 +31,19 @@
                 <img src="/imgs/yo_final.jpg" alt="">
             </div>
             <div class="nom">
-            <h1><p>Ricardo Basten </p></h1>
+            <p>Ricardo Basten </p>
+            </div>
+
+            <div class="metier">
+                <!-- <div class="titre"> -->
+                    <p>Développeur <span>web</span></p> <!--front end junior-->
+                <!-- </div> -->
             </div>
             
-            <div class="metier">
-                <div class="titre">
-                    <p>Développeur <span>web</span> <!--front end junior--></p>
-                </div>
                 <div class="contact">
                     <div class="phone">
                         <i class="fas fa-phone-square-alt"></i>
-                        (514) 318-9246
+                        <span>(514) 318-9246</span>
                     </div>
                     <div class="courrier">
 
@@ -49,7 +53,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
     </section>
 
@@ -58,10 +62,10 @@
         <div class="container-cv">
             <div class=cv>
                 <a download="Ricardo_Basten_Developpeur_web" href="Ricardo_Basten_Developpeur_web.pdf"><span>Télécharger cv</span></a>
-                
+
             </div>
         </div>
-    </section> 
+    </section>
 
     <!--section competentes-->
 
@@ -69,12 +73,12 @@
         <div class="container">
             <h4>Compétences</h4>
             <div class="grid-container">
-            
+
                 <div class="front">
-                <h5 class="front-end">Frontend<h5> 
+                <h5 class="front-end">Frontend<h5>
                     <div class="comp-html">
                         <img class="img-html"src="imgs/logo-html5-y.svg"></a>
-                    </div>   
+                    </div>
                     <div class="comp-css">
                         <img class="img-css"src="imgs/logo-css-y.svg"></a>
                     </div>
@@ -82,9 +86,9 @@
                         <img class="img-js"src="imgs/logo-js-y.svg"></a>
                     </div>
                 </div>
-    
+
                 <div class="back">
-                    <h5 class="back-end">Backend<h5>                   
+                    <h5 class="back-end">Backend<h5>
                     <div class="comp-php">
                         <img class="img-php"src="imgs/logo-php-y.svg"></a>
                     </div>
@@ -94,13 +98,13 @@
                 </div>
 
                 <div class="responsive">
-                    <h5 class="resp">Responsive<h5>    
+                    <h5 class="resp">Responsive<h5>
                         <div class="comp-resp">
                             <img class="img-resp"src="imgs/logo-resp-y.svg"></a>
                         </div>
                 </div>
                 <div class="graphiques">
-                    <h5 class="grap">Graphiques<h4>    
+                    <h5 class="grap">Graphiques<h5>
                         <div class="comp-psd">
                             <img class="img-psd"src="imgs/logo-psd-y.svg"></a>
                         </div>
@@ -119,7 +123,7 @@
                     <div class="comp-mult">
                         <img class="img-mult"src="imgs/logo-multi-y.svg"></a>
                     </div>
-            
+
                 </div>
                 <div class="dimensions">
                     <h5 class="trois-d">3D<h5>
@@ -138,30 +142,26 @@
         <!-- <h4 class="foru">Forum</h4> -->
             <div class="grid-container-port">
                     <div class="projets">
-                    <h5 class="foru">Forum</h5>      
-                            <div class="forum">
-                                <!-- <img class="img-forum"src="imgs/forum.jpg"> -->
-                                <!-- <a download="Ricardo_Basten_Developpeur_web" href="Ricardo_Basten_Developpeur_web.pdf"><span>Télécharger cv</span></a> -->
-                                <!-- <a title="Los Tejos" href="http://www.lostejos.com"><img src="casarural.jpg" alt="Los Tejos" /></a> -->
+                        <h5 class="foru">Forum</h5>
+                        <div class="forum">
                                 <a download="forum" href="https://github.com/ricardobasten/forum"><img src="/imgs/forum.jpg" alt="Forum" /></a>
-                            </div>
-                            
+                        </div>
+
                     </div>
 
                     <div class="projets">
-                        <h5 class="trois-d">3D</h5>      
-                                <!-- <img class="forum" src="imgs/forum.jpg"> -->
-                                <!-- <a href="https://github.com/RicardoBasten/forum.git">Projet Forum</a> -->
-                                <!-- <a href="https://github.com/RicardoBasten/forum.git"></a> -->
-                                <a href="https://youtu.be/wNgB2n0th34"></a>
-                                
-
-                                <div class="forum">
-                                    <img class="img-forum"src="imgs/forum.jpg">
-                                </div>
-                                
+                        <h5 class="trois-d">3D</h5>
+                        <div class="chateau">
+                            <a href="https://youtu.be/wNgB2n0th34"><img src="/imgs/demo_2014.jpg" alt="Demo reel 2014"/></a>
                         </div>
+                    </div>
 
+                    <div class="projets">
+                        <h5 class="trois-d">3D</h5>
+                        <div class="chateau">
+                            <a href="https://youtu.be/wNgB2n0th34"><img src="/imgs/demo_2014.jpg" alt="Demo reel 2014"/></a>
+                        </div>
+                    </div>
 
 
 
@@ -177,16 +177,16 @@
                             <span class="sous-titre">Curso 3</span>
                             <span class="sous-titre">Curso 3</span>
                             <span class="sous-titre">Curso 3</span>
-                            <span class="valor-js">Valor JS</span> 
-                    </div> 
+                            <span class="valor-js">Valor JS</span>
+                    </div>
                     <div class="projets">
                             <span class="titre">Project 4 </span>
                             <span class="sous-titre">Curso 4</span>
                             <span class="valor-html">Valor HTML</span>
                             <span class="sous-titre">Curso 4</span>
-                            <span class="valor-css">Valor CSS</span> 
+                            <span class="valor-css">Valor CSS</span>
                             <span class="sous-titre">Curso 4</span>
-                            <span class="valor-js">Valor JS</span> 
+                            <span class="valor-js">Valor JS</span>
                     </div> -->
             </div>
     </div>
