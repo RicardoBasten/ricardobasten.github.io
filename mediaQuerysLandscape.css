@@ -232,6 +232,10 @@
         font-size: 1.2em;
     }
 
+    body {
+        background-color: green;
+    }
+
     #header ul {
         position:absolute; 
         left: 0;
