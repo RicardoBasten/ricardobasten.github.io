@@ -82,24 +82,18 @@
         color:var(--toggle-over);
     }
 
-    .container-profil-metier .photo img {
-        margin-left: auto;
-        margin-right: auto;
-    }
+    
+    
     
     
     .photo img{
         display: block;
-        width: 30%;
+        width: 45%;
         height: auto;
         border-radius: 50%;
         box-shadow: 0px 6px 5px #1f0404;
-        /* margin-left: auto;
-        margin-right: auto; */
-        /* justify-content: center; */
+        margin: auto;
         margin-bottom: 10%;
-        background-color: aqua;
-        /* background-color: aqua; */
     }
 
     .front-end  {
@@ -109,21 +103,29 @@
     .img-3d {
         margin-bottom: 5%;
     }
-
+/* 
+    .container-profil-metier .nom,  .container-profil-metier .metier, .container-profil-metier .phone, .container-profil-metier .contact, .container-profil-metier .courrier p { 
     .container-profil-metier {
+    
         display: grid;
         align-content:left;
-        grid-template-columns: 120%;
-        ;
-    }
+        grid-template-columns: 100%;
+        
+    }  */
 
     .container-profil-metier .nom{
-        font-size: .9em;
+        font-size: .8em;
+        font-weight: bolder;
     }
 
-    .metier p, .contact .phone, .contact .courrier p{
-        font-size: .8em; 
-        font-weight: lighter
+    .metier p {
+        font-size: .7em; 
+        font-weight: lighter;  
+    }
+
+    .contact .phone, .contact .courrier p{
+        font-size: .5em; 
+        font-weight: lighter;
     } 
 
     .grid-container {
@@ -313,10 +315,7 @@
         min-height:100vh;
     }
 
-    .container-profil-metier .photo img {
-        margin-left: auto;
-        margin-right: auto;
-    }
+   
 
     .photo img{
         display: block;
@@ -327,6 +326,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 10%;
+        justify-content: end;
     }
 
     .container-profil-metier {
