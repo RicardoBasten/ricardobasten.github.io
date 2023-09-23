@@ -103,15 +103,7 @@
     .img-3d {
         margin-bottom: 5%;
     }
-/* 
-    .container-profil-metier .nom,  .container-profil-metier .metier, .container-profil-metier .phone, .container-profil-metier .contact, .container-profil-metier .courrier p { 
-    .container-profil-metier {
-    
-        display: grid;
-        align-content:left;
-        grid-template-columns: 100%;
-        
-    }  */
+
 
     .container-profil-metier .nom{
         font-size: .8em;
@@ -220,6 +212,10 @@
         padding:  2% 0;
     }
 
+    .you {
+        background-color: aqua;
+    }
+
 
     
 
@@ -228,6 +224,8 @@
         margin-bottom: 5%;
         font-size: .6em;
     }
+
+    
 }
 
   
