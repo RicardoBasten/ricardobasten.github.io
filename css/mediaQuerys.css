@@ -212,13 +212,6 @@
         padding:  2% 0;
     }
 
-    .you {
-        background-color: aqua;
-    }
-
-
-    
-
     .droits {
         text-align: center;
         margin-bottom: 5%;
@@ -228,7 +221,7 @@
     
 }
 
-  
+
 
 
 
@@ -441,6 +434,10 @@
         margin-bottom: 5%;
         font-size: .7em;
         color:var(--sous-titre);
+    }
+
+    .icons img {
+        background-color: aqua;
     }
 
 }

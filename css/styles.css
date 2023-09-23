@@ -277,36 +277,26 @@ h2 {
     font-size: 2em;
 }
 
-.circle-you, .circle-git, .circle-link {
-    background-color: #F18009;
-    border-radius: 50%;
-}
-
-/* .icons .circle-you img, .icons .circle-git img, .icons .circle-link img {
+.icons {
+    width: 8%;
+    display:flex;
+    justify-content:center;
+    margin: 5% auto;
+    cursor:pointer;
     
-    width: 8%;
-    /* display:flex;
-    justify-content:center; */
-    /* margin: 5% auto;
-    cursor:pointer; 
-}  */
-
-.icons img{
-    display: block;  
-    margin: auto;
-    width: 8%;
-}
-
-
-
+} 
 
 .icons img  {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left:15%;
+    margin-right:15%;
 }
 
 .tire span {
     color:var(--theme-color);
+}
+
+.icons img {
+    background-color:aqua;
 }
 
 
