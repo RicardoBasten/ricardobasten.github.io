@@ -277,26 +277,52 @@ h2 {
     font-size: 2em;
 }
 
-.icons {
+/* .circle-you, .circle-git, .circle-link {
+    background-color: #F18009;
+    border-radius: 50%;
+} */
+
+/* .icons{
+    display: block;  
+    margin: auto;
+    width: 8%;
+}  */
+
+
+/* .icons {
+    display: flex;
+    justify-content: center;
+    width: 8%;
+   
+   
+}  
+
+/* .icons {
     width: 8%;
     display:flex;
-    justify-content:center;
-    margin: 5% auto;
-    cursor:pointer;
+    /* text-align: center; */
+    /* margin:auto;
+    cursor:pointer;  
     
-} 
+}  */
 
-.icons img  {
-    margin-left:15%;
-    margin-right:15%;
+
+
+.icons {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    margin: auto;
+    cursor:pointer;
 }
+
+.icons .you, .icons .git, .icons .link {
+   margin-left: 5%;
+   margin-right: 5%;
+} 
 
 .tire span {
     color:var(--theme-color);
-}
-
-.icons img {
-    background-color:aqua;
 }
 
 

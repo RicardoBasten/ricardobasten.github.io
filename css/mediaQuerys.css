@@ -192,6 +192,9 @@
         margin-top: 5%;
     }
 
+    
+
+
     .forum img, .chateau img {
         display: block;
         width: 30%;
@@ -217,10 +220,6 @@
 
     
 }
-
-
-
-
 
 /****************************** min-width 601px ******************************/
 
@@ -431,10 +430,6 @@
         margin-bottom: 5%;
         font-size: .7em;
         color:var(--sous-titre);
-    }
-
-    .icons img {
-        background-color: aqua;
     }
 
 }
