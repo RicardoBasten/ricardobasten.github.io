@@ -277,37 +277,6 @@ h2 {
     font-size: 2em;
 }
 
-/* .circle-you, .circle-git, .circle-link {
-    background-color: #F18009;
-    border-radius: 50%;
-} */
-
-/* .icons{
-    display: block;  
-    margin: auto;
-    width: 8%;
-}  */
-
-
-/* .icons {
-    display: flex;
-    justify-content: center;
-    width: 8%;
-   
-   
-}  
-
-/* .icons {
-    width: 8%;
-    display:flex;
-    /* text-align: center; */
-    /* margin:auto;
-    cursor:pointer;  
-    
-}  */
-
-
-
 .icons {
     display: flex;
     width: 20%;
@@ -316,13 +285,27 @@ h2 {
     cursor:pointer;
 }
 
-.icons .you, .icons .git, .icons .link {
-   margin-left: 15%;
-   margin-right: 15%;
-} 
-
 .tire span {
     color:var(--theme-color);
+}
+
+/* .grid-cont-port .chateau img{
+    margin-bottom: 50px;
+} */
+
+/* .chateau img{
+    margin-bottom: 200px;
+    margin-left: 500px;
+    background-color: aqua;
+} */
+
+
+
+.droits {
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: .6em;
+    color:var(--sous-titre)
 }
 
 

@@ -5,7 +5,7 @@
     #header .logo {
         font-size: 1em;
     }
-    
+
     #header ul {
         position:absolute;
         left: 0;
@@ -72,7 +72,7 @@
         top: 14px;
         transform: rotate(45deg);
         box-shadow: 0 0 0 #fff;
-        
+
 
     }
 
@@ -82,10 +82,10 @@
         color:var(--toggle-over);
     }
 
-    
-    
-    
-    
+
+
+
+
     .photo img{
         display: block;
         width: 45%;
@@ -111,14 +111,14 @@
     }
 
     .metier p {
-        font-size: .7em; 
-        font-weight: lighter;  
+        font-size: .7em;
+        font-weight: lighter;
     }
 
     .contact .phone, .contact .courrier p{
-        font-size: .5em; 
+        font-size: .5em;
         font-weight: lighter;
-    } 
+    }
 
     .grid-container {
         background-color:var(--background-color);
@@ -142,7 +142,8 @@
     .grid-container {
         min-height: 100vh;
         display: grid;
-        grid-template-columns: repeat(auto-fit, (1, 1fr));
+        grid-template-columns: repeat(auto-fit, (1,
+        1fr));
     }
 
     .grid-container img {
@@ -164,7 +165,7 @@
         margin-right: auto;
         padding: 2% 2%;
         filter:drop-shadow(3px 4px 3px #000);
-        
+
     }
 
 
@@ -182,7 +183,7 @@
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        
+
     }
 
     .grid-container , .grid-container-port {
@@ -192,7 +193,7 @@
         margin-top: 5%;
     }
 
-    
+
 
 
     .forum img, .chateau img {
@@ -212,13 +213,14 @@
         padding:  2% 0;
     }
 
-    .droits {
-        text-align: center;
-        margin-bottom: 5%;
-        font-size: .6em;
-    }
+   
 
-    
+    .icons .you, .icons .git, .icons .link {
+        margin-left: 8%;
+        margin-right: 8%;
+     }
+
+
 }
 
 /****************************** min-width 601px ******************************/
@@ -230,19 +232,19 @@
     }
 
     #header ul {
-        position:absolute; 
+        position:absolute;
         left: 0;
         width: 100%;
-        height: calc(200vh - 80px); 
-        padding: 50px 100px; 
-        text-align: center; 
-        overflow: auto; 
-        transition: 0.5s; 
-        background:var(--background-color-mobil); 
+        height: calc(200vh - 80px);
+        padding: 50px 100px;
+        text-align: center;
+        overflow: auto;
+        transition: 0.5s;
+        background:var(--background-color-mobil);
         flex-direction: column;
         opacity: 0;
-        transform: translateY(-100%); 
-    } 
+        transform: translateY(-100%);
+    }
 
     #header.active ul {
         opacity: 1;
@@ -253,7 +255,7 @@
     #header ul li a {
         margin: 5px 0;
         font-size: 1.1em;
-    } 
+    }
 
     .toggle {
         display: block;
@@ -302,7 +304,7 @@
         min-height:100vh;
     }
 
-   
+
 
     .photo img{
         display: block;
@@ -322,13 +324,13 @@
     }
 
     .container-profil-metier .nom {
-        font-size: 1em; 
+        font-size: 1em;
     }
 
     .metier p, .contact .phone, .contact .courrier {
-        font-size: .8em; 
+        font-size: .8em;
     }
-    
+
 
 
     .container-cv {
@@ -344,7 +346,7 @@
 
     .container-cv .cv  {
         font-size: .8em;
-        
+
     }
 
     .front {
@@ -424,13 +426,23 @@
     .reseaux {
         background-color: aqua;
     }
-    
+
     .droits {
         text-align: center;
         margin-bottom: 5%;
         font-size: .7em;
         color:var(--sous-titre);
     }
+
+    .icons .you, .icons .git, .icons .link {
+        margin-left: 10%;
+        margin-right: 10%;
+     }
+
+     .icons .you, .icons .git, .icons .link {
+        margin-left: 10%;
+        margin-right: 10%;
+     }
 
 }
 
@@ -447,7 +459,7 @@
 
     #header .logo {
         font-size: 1.2em;
-        
+
     }
 
     #header ul {
@@ -470,21 +482,21 @@
     }
 
     .container-profil-metier {
-        
+
         /* flex-direction: column; */
         padding: 0 7%;
     }
 
     .container-profil-metier .nom {
         font-size: 1.5em;
-        color:var(--primary-color); 
+        color:var(--primary-color);
     }
 
-    .container-profil-metier .metier p, .contact .phone, .contact .courrier { 
+    .container-profil-metier .metier p, .contact .phone, .contact .courrier {
         text-align: left;
         font-size: 1.1em;
         color:#fff;
-    }  
+    }
 
 .container .grid-container {
         display: grid;
@@ -539,7 +551,7 @@
 
     .container h4 {
         font-size: .7em;
-        
+
     }
 
     .grid-container h5 {
@@ -607,7 +619,7 @@
         filter:drop-shadow(3px 3px 3px #000);
     }
 
-    
+
 
     h2 {
         text-align: left;
@@ -635,7 +647,7 @@
 
     #portfolio  {
         min-height:100vh;
-        
+
     }
 
     #portfolio h2 {
@@ -648,17 +660,29 @@
         filter:drop-shadow(3px 3px 3px #000);
     }
 
+    .icons .you, .icons .git, .icons .link {
+        margin-left:5%;
+        margin-right:5%;
+        
+     }
+
 
 
 }
 
-/* 
+
 
 /****************************** min-width 992px ******************************/
-/* 
+
 @media only screen and (min-width:992px) {
 
+    .icons .you, .icons .git, .icons .link {
+        margin-left: 3%;
+        margin-right: 3%;
 
+     }
+
+/*
     .container .grid-container .comp-html .img-html, .comp-css .img-css, .comp-js .img-js, .comp-php .img-php,
     .comp-mysql .img-mysql, .comp-resp .img-resp, .comp-psd .img-psd, .comp-figm .img-figm, .comp-illu .img-illu,
     .comp-ae .img-ae, .comp-mult .img-mult,.comp-3d .img-3d {
@@ -693,7 +717,7 @@
 } */
 
 
-/* 
+/*
 @media only screen and  (min-width:1200px) {
 
     #accueil{
@@ -715,11 +739,11 @@
 
     .img-foru {
         width: 200px;
-        /* height: 75%;   
+        /* height: 75%;
         filter:drop-shadow(3px 3px 3px #000);
     }
+    */
 }
- */
 
 
 
@@ -730,4 +754,5 @@
 
 
 
- 
+
+
