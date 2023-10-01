@@ -697,19 +697,31 @@
         margin-right: 3%;
     }
 
+    #header ul {
+        font-size: .8em;
+        font-weight: lighter;
+    }
+
     .photo img{
         width: 15%;
         
     }
 
     .container-profil-metier .nom {
-        font-size: .9em;
+        font-size: 1em;
         color:var(--primary-color);
     }
 
     .container .grid-container img {
         width: 9%;
     }
+
+    .cv {
+        font-weight: lighter;
+        font-size: .6em;
+    }
+
+
 
 
 }
