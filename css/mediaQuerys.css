@@ -674,7 +674,7 @@
         margin-left:5%;
         margin-right:5%;
         
-     }
+    }
 
 
 
@@ -698,7 +698,7 @@
     }
 
     #header ul {
-        font-size: .8em;
+        font-size: .9em;
         font-weight: lighter;
     }
 
@@ -708,7 +708,7 @@
     }
 
     .container-profil-metier .nom {
-        font-size: 1em;
+        font-size: 1.2em;
         color:var(--primary-color);
     }
 
@@ -719,6 +719,10 @@
     .cv {
         font-weight: lighter;
         font-size: .6em;
+    }
+
+    .container h4, .container-port h5 {
+        font-size: .7em;
     }
 
 
