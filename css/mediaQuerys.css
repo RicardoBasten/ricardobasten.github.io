@@ -452,13 +452,29 @@
 @media only screen and (min-width: 767px) {
 
 
+    #header {
+        /* position: fixed;
+        width: 100%;
+        height:80px;
+        padding: 0 80px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        background-color: var(--theme-color);
+        z-index: 1000;
+        box-shadow: 0px 6px 5px #1f0404; */
+        font-size: .7em;
+        font-weight: lighter;
+    }
+
+
     #accueil {
         min-height:100vh;
     }
 
 
     #header .logo {
-        font-size: 1.2em;
+        font-size: 1.1em;
 
     }
 
@@ -488,7 +504,7 @@
     }
 
     .container-profil-metier .nom {
-        font-size: 1.5em;
+        font-size: 1.2em;
         color:var(--primary-color);
     }
 
@@ -511,7 +527,7 @@
     }
 
     .container .grid-container img {
-        width: 20%;
+        width: 10%;
     }
 
     .grid-container , .grid-container-port {
@@ -526,14 +542,16 @@
     .container h4, .container-port h4 {
         text-align: left;
         margin-bottom: 2%;
-        font-size: .8em;
+        font-size: .6em;
+        font-weight: lighter;
         color:var(--sous-titre);
     }
 
     .container h4, .container-port h5 {
-        font-size: .8em;
+        font-size: .5em;
         color:var(--sous-titre);
         text-align: left;
+        font-weight: lighter;
     }
 
     .graphiques, .multimedia, .dimensions {
@@ -550,13 +568,14 @@
     }
 
     .container h4 {
-        font-size: .7em;
+        font-size: .6em;
 
     }
 
     .grid-container h5 {
-        font-size: .6em;
+        font-size: .5em;
         color:#fff;
+        font-weight:lighter
     }
 
     .grid-container .responsive {
@@ -676,73 +695,28 @@
 
 @media only screen and (min-width:992px) {
 
+    #header .logo {
+        font-size: 1.2em;
+        font-weight: bold;
+
+    }
+
     .icons .you, .icons .git, .icons .link {
         margin-left: 3%;
         margin-right: 3%;
-
-     }
-
-/*
-    .container .grid-container .comp-html .img-html, .comp-css .img-css, .comp-js .img-js, .comp-php .img-php,
-    .comp-mysql .img-mysql, .comp-resp .img-resp, .comp-psd .img-psd, .comp-figm .img-figm, .comp-illu .img-illu,
-    .comp-ae .img-ae, .comp-mult .img-mult,.comp-3d .img-3d {
-        width: 20%;
-        height:auto;
-        filter:drop-shadow(3px 4px 3px #000);
     }
 
+    .photo img{
+        width: 15%;
+        
+    }
 
-
-    h2 span {
-        margin-left: 15%;
-        color:#fff;
+    .container-profil-metier .nom {
         font-size: .9em;
+        color:var(--primary-color);
     }
 
-    .container-profil-metier .metier {
-        font-size: 0.8em;
-    }
 
-    #competences h2 {
-        font-size: 1.0em;
-    }
-
-    .container .grid-container .competences .titre {
-        font-size: 1.0em;
-    }
-
-    .container .grid-container .competences .sous-titre {
-        font-size: 1.0em;
-    }
-} */
-
-
-/*
-@media only screen and  (min-width:1200px) {
-
-    #accueil{
-        min-height: 100vh;
-        background-color:brown;
-    }
-
-    #competences {
-        min-height:100vh;
-    }
-
-    .container .grid-container .comp-html .img-html, .comp-css .img-css, .comp-js .img-js, .comp-php .img-php,
-    .comp-mysql .img-mysql, .comp-resp .img-resp, .comp-psd .img-psd, .comp-figm .img-figm, .comp-illu .img-illu,
-    .comp-ae .img-ae, .comp-mult .img-mult,.comp-3d .img-3d {
-        width: 20%;
-        height:auto;
-        filter:drop-shadow(3px 4px 3px #000);
-    }
-
-    .img-foru {
-        width: 200px;
-        /* height: 75%;
-        filter:drop-shadow(3px 3px 3px #000);
-    }
-    */
 }
 
 
