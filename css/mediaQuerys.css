@@ -479,13 +479,13 @@
 
     .photo img{
         display: block;
-        width: 23%;
+        width: 20%;
         height: auto;
         border-radius: 50%;
         box-shadow: 0px 6px 5px #1f0404;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 10%;
+        margin-bottom: 3%;
     }
 
     .container-profil-metier {
@@ -500,7 +500,7 @@
     }
 
     .container-profil-metier .metier p, .contact .phone, .contact .courrier {
-        text-align: left;
+        text-align: center;
         font-size: 1.1em;
         color:#fff;
     }
@@ -723,6 +723,10 @@
 
     .container h4, .container-port h5 {
         font-size: .7em;
+    }
+
+    .container h4, .container-port h5 {
+        font-size: .8em;
     }
 
 
