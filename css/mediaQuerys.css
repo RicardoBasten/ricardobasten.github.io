@@ -545,6 +545,7 @@
         color:var(--sous-titre);
         text-align: left;
         font-weight: lighter;
+       
     }
 
     .graphiques, .multimedia, .dimensions {
@@ -566,7 +567,7 @@
     }
 
     .grid-container h5 {
-        font-size: .5em;
+        font-size: .4em;
         color:#fff;
         font-weight:lighter
     }
@@ -689,9 +690,8 @@
 @media only screen and (min-width:992px) {
 
     #header .logo {
-        font-size: 1.2em;
+        font-size: 1.5em;
         font-weight: bold;
-
     }
 
     .icons .you, .icons .git, .icons .link {
@@ -728,8 +728,12 @@
     }
 
     .container h4, .container-port h5 {
-        font-size: .8em;
+        font-size: .5em;
     }
+
+    /* .container h4, .container-port h4 {
+        font-size: .5em;
+    } */
 
 
 
