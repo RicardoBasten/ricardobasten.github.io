@@ -237,6 +237,7 @@
         position:absolute;
         left: 0;
         width: 100%;
+
         height: calc(200vh - 80px);
         padding: 50px 100px;
         text-align: center;
@@ -567,7 +568,7 @@
     }
 
     .grid-container h5 {
-        font-size: .4em;
+        font-size: .5em;
         color:#fff;
         font-weight:lighter
     }
@@ -724,7 +725,7 @@
     }
 
     .container h4, .container-port h5 {
-        font-size: .7em;
+        font-size: .6em;
     }
 
     .container h4, .container-port h5 {
