@@ -138,7 +138,7 @@
     }
 
     .container-cv .cv  {
-        font-size: .6em;
+        font-size: .8em;
     }
 
     .grid-container {
@@ -171,7 +171,7 @@
     }
 
 
-    .front-end, .back-end, .resp, .grap, .mult, .trois-d, .foru {
+    .front-end, .back-end, .resp, .grap, .mult, .foru , .trois-d, .deux-d  {
         text-align: center;
         font-weight: lighter;
     }
@@ -187,6 +187,7 @@
         margin-right: auto;
 
     }
+    
 
     .grid-container , .grid-container-port {
         background-color:var(--background-color);
@@ -198,7 +199,7 @@
 
 
 
-    .forum img, .chateau img {
+    .forum img, .chateau img, .cmsi img {
         display: block;
         width: 30%;
         height: auto;
@@ -215,12 +216,18 @@
         padding:  2% 0;
     }
 
-   
+    .cmsi img {
+        display: block;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        padding:  2% 0;
+    }
 
     .icons .you, .icons .git, .icons .link {
         margin-left: 8%;
         margin-right: 8%;
-     }
+    }
 
 
 }
@@ -461,6 +468,7 @@
         font-weight: lighter;
     }
 
+ 
 
     #accueil {
         min-height:100vh;
@@ -653,7 +661,7 @@
         text-align: center;
     }
 
-    .projets .foru, .projets .trois-d {
+    .projets .foru, .projets .trois-d, .projets .deux-d {
         text-align: center;
     }
 
@@ -668,10 +676,18 @@
         font-size: 1em;
     }
 
-    .forum img, .chateau img {
+    .forum img, .chateau img, .cmsi img, .cmsi-source img{
         width: 40%;
         height: auto;
         filter:drop-shadow(3px 3px 3px #000);
+        cursor: pointer;
+    }
+
+    .cmsi-pere img, .cmsi-catalogue img   {
+        width: 18.3%;
+        cursor: pointer;
+        filter:drop-shadow(3px 3px 3px #000);
+
     }
 
     .icons .you, .icons .git, .icons .link {
@@ -731,11 +747,6 @@
     .container h4, .container-port h5 {
         font-size: .5em;
     }
-
-    /* .container h4, .container-port h4 {
-        font-size: .5em;
-    } */
-
 
 
 
