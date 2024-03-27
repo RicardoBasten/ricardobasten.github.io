@@ -199,29 +199,28 @@
 
 
 
-    .forum img, .chateau img, .cmsi img {
+    .forum img, .chateau img, .cmsi-avril img, .cmsi-source img {
         display: block;
         width: 30%;
         height: auto;
         margin-left: auto;
         margin-right: auto;
+        cursor: pointer;
+        margin-bottom: 5%;
     }
 
-
-    .chateau img {
+    .cmsi-pere img, .cmsi-catalogue img   {
+        width: 18.3%;
         display: block;
-        width: 30%;
         margin-left: auto;
         margin-right: auto;
-        padding:  2% 0;
+        margin-bottom: 5%;
+        cursor: pointer;
+        filter:drop-shadow(3px 3px 3px #000);
     }
 
-    .cmsi img {
-        display: block;
-        width: 30%;
-        margin-left: auto;
-        margin-right: auto;
-        padding:  2% 0;
+    .cmsi-catalogue {
+        padding-bottom: 1%;
     }
 
     .icons .you, .icons .git, .icons .link {
@@ -407,6 +406,7 @@
         margin-left: auto;
         margin-right: auto;
         padding: 1% 1%;
+        /* background-color: aqua; */
         filter:drop-shadow(3px 4px 3px #000);
     }
 
@@ -433,9 +433,9 @@
         padding:  2% 0;
     }
 
-    .reseaux {
+    /* .reseaux {
         background-color: aqua;
-    }
+    } */
 
     .droits {
         text-align: center;
@@ -516,6 +516,10 @@
         color:#fff;
     }
 
+    section a {
+        font-size: .6em;
+    }
+
 .container .grid-container {
         display: grid;
         padding: 0 auto;
@@ -554,7 +558,7 @@
         color:var(--sous-titre);
         text-align: left;
         font-weight: lighter;
-       
+    
     }
 
     .graphiques, .multimedia, .dimensions {
@@ -676,7 +680,7 @@
         font-size: 1em;
     }
 
-    .forum img, .chateau img, .cmsi img, .cmsi-source img{
+    .forum img, .chateau img, .cmsi img, .cmsi-source img, .cmsi-avril img{
         width: 40%;
         height: auto;
         filter:drop-shadow(3px 3px 3px #000);
@@ -748,7 +752,7 @@
         font-size: .5em;
     }
 
-
+  
 
 }
 

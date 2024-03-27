@@ -3,7 +3,7 @@
 :root {
    --theme-color:rgb(52, 73, 94);
    --background-color:rgba(255, 255, 255, 0.055);
-   --background-color-mobil:rgb(34, 51, 68); 
+   --background-color-mobil:rgb(34, 51, 68);
    --primary-color:rgb(255, 255, 255);
    --text-color-inverse:rgb(255, 255, 255);
    --text-color:#f7c331;
@@ -17,7 +17,7 @@
    --sous-tritre-competences:#f7c331;
    --title-competences:rgb(255, 255, 255);
    --toggle-over:#f7c331;
-   
+
 
 }
 
@@ -33,7 +33,7 @@ body {
     background-color: var(--theme-color);
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    
+
 }
 
 .mult .img-mult {
@@ -140,17 +140,17 @@ section a {
     display: inline-block;
     padding: 8px 25px;
     text-decoration: none;
-    font-size: 0.9em;
-    background:var(--theme-color); 
+    /* font-size: .7em; */
+    background:var(--theme-color);
     color:white;
     margin-top: 20px;
     border-radius: 25px;
-} 
+}
 
 #cv{
     background-color:var(--text-color);
     min-height: 100vh;
-    
+
 }
 
 /***********Section profil************/
@@ -176,9 +176,9 @@ section a {
 .metier p{
     font-size: 1.8em;
     color:var(--sous-titre);
-    
-    
-} 
+
+
+}
 
 .metier span {
     color: var(--text-color) ;
@@ -199,7 +199,7 @@ section a {
     height:25%;
     object-fit: contain;
     color: #f7c331;
-    
+
 }
 
 
@@ -238,7 +238,7 @@ h2 {
 
 .comp-pho {
     width: 80px;
-} 
+}
 
 .container .design span {
     display: inline;
@@ -250,7 +250,7 @@ h2 {
 
 .container h2 {
     color: #fff;
-    
+
 }
 
 .container .competences span {
